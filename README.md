@@ -1,23 +1,96 @@
-# REPLACE WITH YOUR APP NAME
+# Explore Fashion App
 
-This is the Final assessment template for CASA0014 - Please use this template and edit the relevant sections to personalise.
-This section has a short introduction to what the application is
+A stylish and simple fashion outfit mobile application built with Flutter and Node.js.
+Users can discover popular outfits, publish their own outfits, and manage their collections easily.
 
-## Use this README File 
+## Tech Stack
 
-Use this section to show us what your Mobile App is about.   Include a Screenshot to the App, link to the various frameworks you've used. Include your presentation video here that shows off your Mobile App.   Emojis are also fun to include 📱 😄
+**Client (Mobile App):**
 
-Look at some other Flutter Apps online and see how they use there README File.  Good examples are:
+* [Flutter](https://flutter.dev/) - Cross-platform UI toolkit
+* [Dio]() - HTTP networking
+* [GetX]() - State management, routing, dependency injection
+* [Flutter ScreenUtil]() - Responsive design
+* [Flutter Localizations (l10n)]() - Multi-language support
 
-- https://github.com/miickel/flutter_particle_clock
-- https://github.com/Tarikul711/flutter-food-delivery-app-ui    
-- https://github.com/mohak1283/Instagram-Clone
+**Server (Backend):**
 
+* [Node.js](https://nodejs.org/) - JavaScript runtime environment
+* [Express](https://expressjs.com/) - Web framework for Node.js
+* [MySQL](https://www.mysql.com/) - Relational database for storing user and outfit data
 
-## Include A Section That Tells Developers How To Install The App
+## App Features
 
-Include a section that gives intructions on how to install the app or run it in Flutter.  What versions of the plugins are you assuming?  Maybe define a licence
+1. **Authentication:**
+   * Login using username and password
+   * Register with username, email, and password
+2. **Home Page:**
+   * Search outfits
+   * View a list of popular outfits
+   * Button to publish a new outfit
+3. **Profile Page:**
+   * View user info (avatar, username, email)
+   * Buttons for "My Favorites" and "Publish History"
+4. **Publish Outfit:**
+   * Take photos using the device camera
+   * Edit outfit name, description, and type
+   * Upload to server
+5. **My Favorites:**
+   * View a list of favorite outfits
+6. **Publish History:**
+   * View a list of outfits published by the user
 
-##  Contact Details
+## Database
 
-Having Contact Details is also good as it shows people how to get in contact with you if they'd like to contribute to the app. 
+* Use MySQL to create necessary tables for:
+* user (username, email, password)
+* outfit (user\_id, name, description, category, picture)
+* favorite (user\_id, outfit\_id)
+* record (user\_id, outfit\_id)
+
+## Future Improvements
+
+* Add social community
+* Outfit categories and tags
+* Comment features on outfits
+
+## Flow Charts
+
+````mermaid
+graph
+  A[launcher] --> B{auth state}
+  B -->|login| C[to home page]
+  B -->|register| D[input username email password]
+  
+  C --> F[bottom navigation]
+  F --> G[home]
+  F --> H[profile]
+````
+
+````mermaid
+graph
+  subgraph Home flow chart
+  G[home]
+  G --> I[record outfit]
+  I --> J[to record page]--> K{is publish}
+  K --> |publish record| L[edit name description category] --> M[upload]
+  K --> |cancel| N[exit]
+  G --> O[recommendation outfit]
+  G --> R[search by key] --> Y[show search result]
+  end
+````
+
+````mermaid
+graph
+  subgraph Personal center flow chart
+  H[profile]
+  H --> P[personal info]
+  P --> V[user avatar]
+  P  --> W[username]
+  P  --> X[email]
+  H --> Q[my favorite]
+  Q --> S[show favorite list]
+  H --> T[publish history]
+  T --> U[show publish history list]
+  end
+````
