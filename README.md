@@ -1,6 +1,7 @@
-# Explore Fashion App
+# Fashion Outfit App
 
-This App is a mobile application designed to empower users to rediscover personal fashion inspiration in an algorithm-dominated world.The app allows users to capture real-world outfit inspirations, organize and curate their favorite styles, and seamlessly manage their fashion collections.With a clean and intuitive design, Fashion Outfit App creates a stylish, emotionally engaging experience that helps users express individuality and build their unique fashion journey.
+A stylish and simple fashion outfit mobile application built with Flutter and Node.js.
+Users can discover popular outfits, publish their own outfits, and manage their collections easily.
 
 ## Tech Stack
 
@@ -19,7 +20,8 @@ This App is a mobile application designed to empower users to rediscover persona
 * [MySQL](https://www.mysql.com/) - Relational database for storing user and outfit data
 
 ## 🚀 Install Process
-###  Full Setup Commands
+
+### 1~7. Full Setup Commands
 
 ```bash
 # 1. Clone the Repository
@@ -34,9 +36,11 @@ flutter pub get
 cd ../server
 npm install
 
-# (Optional) 4 & 5. Environment & Database Setup
-# Make sure you have Flutter >=3.x, Node.js >=16.x, and MySQL Server installed.
-# Create a MySQL database (e.g., fashion_outfit_db) and set credentials in /server/config/db.js
+# 4. Environment Setup
+# Flutter >=3.x, Node.js >=16.x, MySQL Server must be installed
+
+# 5. Database Setup
+# Create MySQL database 'fashion_outfit_db' and update /server/config/db.js
 
 # 6. Run the Flutter App (Client)
 cd ../client
@@ -45,6 +49,7 @@ flutter run
 # 7. Run the Node.js Server (Backend)
 cd ../server
 npm start
+```
 
 ## App Features
 
