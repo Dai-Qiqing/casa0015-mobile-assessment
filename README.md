@@ -18,6 +18,34 @@ This App is a mobile application designed to empower users to rediscover persona
 * [Express](https://expressjs.com/) - Web framework for Node.js
 * [MySQL](https://www.mysql.com/) - Relational database for storing user and outfit data
 
+## Install Process
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/fashion-outfit-app.git
+### 2. Install Flutter Dependencies (Client side)
+cd client
+flutter pub get
+### 3. Install Node.js Dependencies (Server side)
+cd server
+npm install
+### 4. Environment Setup
+Flutter SDK: >= 3.x
+Node.js: >= 16.x
+MySQL Server
+### 5. Database Setup
+Create a new MySQL database (e.g., fashion_outfit_db).
+Run SQL scripts to create the following tables:
+user (id, username, email, password)
+outfit (id, user_id, name, description, category, picture)
+favorite (id, user_id, outfit_id)
+Update /server/config/db.js with your database credentials.
+### 6. Run the Flutter App (Client)
+cd client
+flutter run
+### 7. Run the Node.js Server (Backend)
+cd server
+npm start
+
 ## App Features
 
 1. **Authentication:**
