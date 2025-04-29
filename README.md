@@ -31,10 +31,13 @@ npm install
 #### 4. Environment Setup
 Make sure you have:
 Flutter >= 3.x
+
 Node.js >= 16.x
+
 MySQL Server
 #### 5. Database Setup
 Create a MySQL database fashion_outfit_db.
+
 Update /server/config/db.js with your database credentials.
 #### 6. Database Setup
 cd ../client
