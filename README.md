@@ -72,6 +72,10 @@ npm start
 6. **Publish History:**
    * View a list of outfits published by the user
 
+## Storyboard
+
+![Storyboard](https://github.com/user-attachments/assets/6853700d-c16b-4a68-a86f-ddd6c810ad95)
+
 ## Database
 
 * Use MySQL to create necessary tables for:
