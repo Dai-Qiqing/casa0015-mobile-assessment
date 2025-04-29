@@ -1,9 +1,9 @@
-# Fashion Outfit App
+# 👗 Explore Fashion App
 
 A stylish and simple fashion outfit mobile application built with Flutter and Node.js.
 Users can discover popular outfits, publish their own outfits, and manage their collections easily.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 **Client (Mobile App):**
 
@@ -39,11 +39,11 @@ Update /server/config/db.js with your database credentials.
 ### 6. Database Setup
 cd ../client
 flutter run
-###  Run the Node.js Server (Backend)
+### 7.Run the Node.js Server (Backend)
 cd ../server
 npm start
 
-## App Features
+## ✨ App Features
 
 1. **Authentication:**
    * Login using username and password
