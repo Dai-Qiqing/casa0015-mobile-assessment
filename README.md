@@ -1,7 +1,6 @@
 # 👗 Explore Fashion App
 
-A stylish and simple fashion outfit mobile application built with Flutter and Node.js.
-Users can discover popular outfits, publish their own outfits, and manage their collections easily.
+This App is a mobile application designed to empower users to rediscover personal fashion inspiration in an algorithm-dominated world.The app allows users to capture real-world outfit inspirations, organize and curate their favorite styles, and seamlessly manage their fashion collections.With a clean and intuitive design, the App creates a stylish, emotionally engaging experience that helps users express individuality and build their unique fashion journey.
 
 ## 🛠️ Tech Stack
 
