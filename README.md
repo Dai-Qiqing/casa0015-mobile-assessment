@@ -21,35 +21,27 @@ Users can discover popular outfits, publish their own outfits, and manage their 
 
 ## 🚀 Install Process
 
-### 1~7. Full Setup Commands
-
-```bash
-# 1. Clone the Repository
-git clone https://github.com/your-username/fashion-outfit-app.git
-cd fashion-outfit-app
-
-# 2. Install Flutter Dependencies (Client side)
+### 1. Clone the Repository
+### 2. Install Flutter Dependencies (Client side)
 cd client
 flutter pub get
-
-# 3. Install Node.js Dependencies (Server side)
+### 3. Install Node.js Dependencies (Server side)
 cd ../server
 npm install
-
-# 4. Environment Setup
-# Flutter >=3.x, Node.js >=16.x, MySQL Server must be installed
-
-# 5. Database Setup
-# Create MySQL database 'fashion_outfit_db' and update /server/config/db.js
-
-# 6. Run the Flutter App (Client)
+### 4. Environment Setup
+Make sure you have:
+Flutter >= 3.x
+Node.js >= 16.x
+MySQL Server
+### 5. Database Setup
+Create a MySQL database fashion_outfit_db.
+Update /server/config/db.js with your database credentials.
+### 6. Database Setup
 cd ../client
 flutter run
-
-# 7. Run the Node.js Server (Backend)
+###  Run the Node.js Server (Backend)
 cd ../server
 npm start
-```
 
 ## App Features
 
