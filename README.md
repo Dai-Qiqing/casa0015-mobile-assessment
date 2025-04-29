@@ -29,16 +29,22 @@ cd ../server
 npm install
 #### 4. Environment Setup
 Make sure you have:
-Flutter >= 3.x
+Flutter 3.27.1
 
-Node.js >= 16.x
+Node.js 23
 
 MySQL Server
 #### 5. Database Setup
 Create a MySQL database fashion_outfit_db.
 
 Update /server/config/db.js with your database credentials.
-#### 6. Database Setup
+#### 6. Configure API Base URL in Flutter App
+ * Make sure your Flutter app points to the correct server IP address, not localhost.
+ * Update the API base URL in your Flutter project (e.g., in a constants file or network configuration file).
+ * Use your local IP address (e.g., 192.168.1.xxx) so the mobile device and the server are on the same network.
+   Example：const String BASE_URL = "http://192.168.1.xxx:PORT";
+ * Ensure both the computer (server) and the mobile device (client) are connected to the same Wi-Fi network.
+#### 7. Database Setup
 cd ../client
 flutter run
 #### 7.Run the Node.js Server (Backend)
